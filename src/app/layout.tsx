@@ -20,19 +20,6 @@ export const metadata: Metadata = {
   formatDetection: {
     telephone: false,
   },
-  openGraph: {
-    url: 'https://nextarter-tailwind.sznm.dev',
-    title: 'nextarter-tailwind',
-    description: 'Next.js + TailwindCSS v3 + TypeScript template',
-    images: {
-      url: 'https://og-image.sznm.dev/**nextarter-tailwind**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-      alt: 'nextarter-tailwind.sznm.dev og-image',
-    },
-  },
-  twitter: {
-    creator: '@sozonome',
-    card: 'summary_large_image',
-  },
 };
 
 export const viewport: Viewport = {
@@ -50,6 +37,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
+          // eslint-disable-next-line prettier/prettier
           'min-h-screen bg-background font-sans antialiased',
           fontSans.variable
         )}
