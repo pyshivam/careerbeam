@@ -6,16 +6,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:turbo": "pnpm dlx turbo@latest build",
+    "build:turbo": "bun create turbo@latest build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "eslint src --fix && pnpm format",
+    "lint:fix": "eslint src --fix && bun format",
     "type-check": "tsc --noEmit",
-    "check:turbo": "pnpm dlx turbo@latest lint type-check",
+    "check:turbo": "bun create turbo@latest lint type-check",
     "format": "prettier --write src",
-    "up-interactive": "pnpm up -i",
-    "up-latest": "pnpm up-interactive -L",
+    "up-interactive": "bun up -i",
+    "up-latest": "bun up-interactive -L",
     "release": "cross-env HUSKY=0 standard-version",
     "push-release": "git push --follow-tags origin main",
     "prepare": "husky"
@@ -58,6 +58,6 @@
   },
   "engines": {
     "node": ">=16.8.x",
-    "pnpm": ">=8"
+    "bun": ">=1.1.x"
   }
 }
