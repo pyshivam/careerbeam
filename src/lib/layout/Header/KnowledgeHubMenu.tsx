@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import Image from 'next/image';
 
-import IconsKH from './icons-kh';
+import IconsKH from './IconsKh';
 
 const KnowledgeHubMenu = () => {
   return (

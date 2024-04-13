@@ -5,8 +5,8 @@ import { ChevronDown, MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import KnowledgeHubMenu from './knowledge-hub-menu';
-import MyAcccountDropdown from './my-account-dropdown';
+import KnowledgeHubMenu from './KnowledgeHubMenu';
+import MyAcccountDropdown from './MyAccountDropdown';
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -40,14 +40,14 @@ const Header = () => {
             />
           </a>
         </div>
-        <div className="flex lg:hidden">
+        <div className="flex bg-[#173D7A] p-1 lg:hidden">
           <button
             type="button"
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <MenuIcon className="h-6 w-6" aria-hidden="true" />
+            <MenuIcon className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
