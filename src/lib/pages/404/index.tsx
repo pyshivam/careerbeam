@@ -11,9 +11,6 @@ const Page404 = () => {
           height={320}
           alt="404 Illustration"
         />
-        <a href="https://storyset.com/web" className="text-xs">
-          Web illustrations by Storyset
-        </a>
       </div>
 
       <div className="grid gap-6 text-center">
