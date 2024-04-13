@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
       <div className="flex min-h-screen flex-col">
         <Header />
-        <main className="wrapper h-screen pt-20 ">{children}</main>
+        <main className="container h-screen w-full pt-28">{children}</main>
       </div>
     </ThemeProvider>
   );

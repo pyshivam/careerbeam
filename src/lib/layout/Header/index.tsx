@@ -5,8 +5,8 @@ import { ChevronDown, MenuIcon } from 'lucide-react';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import KnowledgeHubMenu from './KnowledgeHubMenu';
-import MyAcccountDropdown from './MyAccountDropdown';
+import KnowledgeHubMenu from './components/KnowledgeHubMenu';
+import MyAcccountDropdown from './components/MyAccountDropdown';
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
