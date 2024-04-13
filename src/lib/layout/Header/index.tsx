@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 import KnowledgeHubMenu from './knowledge-hub-menu';
+import MyAcccountDropdown from './my-account-dropdown';
 
 const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -81,10 +82,14 @@ const Header = () => {
             About us
           </a>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+        <div className="hidden flex-row lg:flex lg:flex-1 lg:justify-end">
+          <MyAcccountDropdown />
+          <button
+            type="button"
+            className="rounded-full bg-[#173D7A] px-6 py-2 text-sm font-semibold leading-6 text-gray-900 text-white"
+          >
+            Register Now
+          </button>
         </div>
       </nav>
       <div
