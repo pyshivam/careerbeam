@@ -11,9 +11,9 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-      <div className="flex min-h-screen flex-col">
+      <div className="flex-1">
         <Header />
-        <main className="container h-screen w-full pt-28">{children}</main>
+        <main className="container h-full w-full pt-20">{children}</main>
       </div>
     </ThemeProvider>
   );

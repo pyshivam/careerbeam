@@ -101,3 +101,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+.homeCarousel {
+  --transition: 400ms ease-in; /* Define the transition timing */
+  transition:
+    height var(--transition),
+    width var(--transition); /* Apply transition to height and width */
+}

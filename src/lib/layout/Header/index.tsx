@@ -23,9 +23,9 @@ const Header = () => {
   }
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50 shadow-lg">
+    <header className="absolute inset-x-0 top-0 z-50">
       <nav
-        className="absolute inset-x-0 top-0 z-10 flex items-center justify-between bg-white p-6 lg:px-8"
+        className="absolute inset-x-0 top-0 z-10 flex items-center justify-between bg-white p-6 shadow-lg lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
