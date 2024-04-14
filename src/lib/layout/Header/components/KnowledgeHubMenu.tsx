@@ -11,15 +11,15 @@ const KnowledgeHubMenu = () => {
       onClick={(event) => event.stopPropagation()}
     >
       <div className="container flex h-80 items-center justify-between px-20">
-        <div className="items-left flex  flex-col justify-between overflow-visible px-10">
+        <div className="items-left flex  flex-col justify-between  px-10">
           <h2 className="w-80 text-4xl font-normal text-gray-900">
             Join our registration link
           </h2>
-          <div className="mt-3 w-72 text-[#1E1E2F99]">
+          <div className="mt-6 w-72 text-[#1E1E2F99]">
             And receive updates, expert educational insights, and early access
             to our platform.
           </div>
-          <div className="mt-3 flex items-center gap-2">
+          <div className="mt-6 flex items-center gap-2">
             <button
               type="button"
               className="rounded-full bg-[#173D7A] px-6 py-2 text-white"

@@ -38,7 +38,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body
         className={cn(
           // eslint-disable-next-line prettier/prettier
-          'flex h-screen overflow-x-hidden whitespace-nowrap bg-background font-sans antialiased',
+          'flex h-screen overflow-x-hidden bg-background font-sans antialiased',
           fontSans.variable
         )}
       >
