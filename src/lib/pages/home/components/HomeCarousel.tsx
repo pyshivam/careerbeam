@@ -60,7 +60,7 @@ const HomeCarousel = () => {
 
               <div
                 className={clsx(
-                  'absolute bottom-16 left-8 h-16 w-16 rounded-full p-4 text-white',
+                  'absolute bottom-20 left-8 h-16 w-16 rounded-full p-4 text-white',
                   'transition-all duration-500 ease-in-out',
                   activeItem === index
                     ? ''
@@ -73,7 +73,7 @@ const HomeCarousel = () => {
 
               <div
                 className={clsx(
-                  'absolute bottom-8 left-8 p-0 text-white transition-[transform,opacity] duration-500 ease-in-out',
+                  'absolute bottom-8 left-8 text-white transition-[transform,opacity] duration-500 ease-in-out',
                   activeItem === index
                     ? 'translate-y-0 opacity-100'
                     : 'translate-y-20 opacity-0'
