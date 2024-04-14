@@ -31,10 +31,10 @@ const HomeCarousel = () => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
-    <div className="flex  min-h-52  w-full items-center justify-center">
+    <div className="flex w-full flex-1 items-center justify-center">
       <ul
         onMouseLeave={() => setActiveItem(0)}
-        className="group flex h-[640px] w-full flex-row items-end gap-[2%]"
+        className="group flex h-full max-h-[650px] w-full flex-row items-end gap-[2%] lg:h-[650px]"
       >
         {persons.map((person, index) => (
           <li
@@ -43,7 +43,7 @@ const HomeCarousel = () => {
             onMouseEnter={() => setActiveItem(index)}
             aria-current={activeItem === index}
             className={clsx(
-              "relative h-[340px] w-[20%] cursor-pointer [&[aria-current='true']]:h-[640px] [&[aria-current='true']]:w-[52%]",
+              "relative h-[340px] w-[20%] cursor-pointer [&[aria-current='true']]:h-full [&[aria-current='true']]:w-[52%]",
               'homeCarousel',
               'md:before-block before:absolute before:bottom-0 before:left-[-10px] before:right-[-10px] before:top-0 before:hidden before:bg-white'
             )}
@@ -51,7 +51,7 @@ const HomeCarousel = () => {
           >
             <div className="relative h-full w-full overflow-hidden rounded-2xl bg-[#c9c6c7]">
               <Image
-                className="absolute left-1/2 right-0 top-1/2 h-[640px] w-[590px]  max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
+                className="absolute left-1/2 right-0 top-1/2 h-full w-full max-w-none -translate-x-1/2 -translate-y-1/2 object-cover"
                 src={person.img}
                 alt={person.name}
                 width={590}

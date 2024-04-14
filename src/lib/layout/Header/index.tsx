@@ -28,7 +28,7 @@ const Header = () => {
         className="flex items-center justify-between bg-white p-6  lg:px-8"
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">CareerBeam</span>
             <Image
@@ -82,7 +82,7 @@ const Header = () => {
             About us
           </a>
         </div>
-        <div className="hidden flex-row lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden flex-row lg:flex  lg:justify-end">
           <MyAcccountDropdown />
           <button
             type="button"
