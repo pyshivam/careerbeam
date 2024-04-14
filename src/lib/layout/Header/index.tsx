@@ -23,9 +23,9 @@ const Header = () => {
   }
 
   return (
-    <header className="absolute inset-x-0 top-0 z-50">
+    <header className="h-30 absolute inset-x-0 top-0 z-50 shadow-lg">
       <nav
-        className="absolute inset-x-0 top-0 z-10 flex items-center justify-between bg-white p-6 shadow-lg lg:px-8"
+        className="flex items-center justify-between bg-white p-6  lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
@@ -86,7 +86,7 @@ const Header = () => {
           <MyAcccountDropdown />
           <button
             type="button"
-            className="rounded-full bg-[#173D7A] px-6 py-2 text-sm font-semibold leading-6 text-gray-900 text-white"
+            className="rounded-full bg-[#173D7A] px-6 py-2 text-sm font-semibold leading-6 text-white"
           >
             Register Now
           </button>
@@ -94,7 +94,7 @@ const Header = () => {
       </nav>
       <div
         role="presentation"
-        className={`${activeNavMenu !== '' ? ' h-screen w-full' : 'h-0 w-full pt-0 opacity-0'} z-5 absolute inset-x-0 top-0 overflow-hidden bg-black/20 pt-20 transition-all duration-700 `}
+        className={`${activeNavMenu !== '' ? ' h-[calc(100vh-90px)] w-full' : 'h-0 w-full pt-0 opacity-0'} z-5  hidden overflow-hidden  bg-black/20 transition-all duration-700 lg:block`}
         onClick={() => setActiveNavMenu('')}
       >
         <KnowledgeHubMenu />
