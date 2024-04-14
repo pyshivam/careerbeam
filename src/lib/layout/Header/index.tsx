@@ -50,7 +50,7 @@ const Header = () => {
             <MenuIcon className="h-6 w-6 text-white" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-5">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
             What&apos;s new
           </a>

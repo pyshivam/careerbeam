@@ -11,7 +11,7 @@ const KnowledgeHubMenu = () => {
       onClick={(event) => event.stopPropagation()}
     >
       <div className="container flex h-80 items-center justify-between px-20">
-        <div className="items-left flex  flex-col justify-between  px-10">
+        <div className="items-left flex flex-col justify-between  px-10">
           <h2 className="w-80 text-4xl font-normal text-gray-900">
             Join our registration link
           </h2>
